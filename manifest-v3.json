@@ -1,18 +1,21 @@
 {
-	"manifest_version": 2,
+	"manifest_version": 3,
 	"name": "Cookiedough",
 	"description": "Developer tool to bulk set cookies from a standard cookie header string",
 	"version": "1.0.1",
 	"icons": {
 		"128": "cookie.svg"
 	},
-	"browser_action": {
+	"action": {
 		"default_icon": "cookie.svg",
 		"default_popup": "popup.html"
 	},
 	"permissions": [
 		"cookies",
 		"tabs",
+		"activeTab"
+	],
+	"host_permissions": [
 		"<all_urls>"
 	]
 }

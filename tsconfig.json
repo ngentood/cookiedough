@@ -1,13 +1,21 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"target": "es2016",
-		"noImplicitAny": false,
+		"target": "ES2020",
+		"lib": ["DOM", "DOM.Iterable", "ES6"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noFallthroughCasesInSwitch": true,
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
 		"sourceMap": true,
-		"rootDir": "src",
-		"outDir": "distro/js",
-		"noEmitOnError": true,
-		"jsx": "react"
+		"outDir": "./distro/js"
 	},
 	"include": [
 		"./src/**/*"

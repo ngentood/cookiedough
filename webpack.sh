@@ -1,11 +1,9 @@
 #!/usr/bin/env bash
 #
+# Development build script with file watching
+#
 
-export PATH="node_modules/.bin:$PATH"
+echo "Starting development build with file watching..."
 
-# weird, the hot reload server fails if this hasn't been done
-if [ ! -d "node_modules/webpack" ]; then
-	npm link webpack
-fi
-
-webpack --watch
+# Run webpack in watch mode
+npm run dev
